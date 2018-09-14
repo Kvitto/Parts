@@ -6,7 +6,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-    <title>Books Page</title>
+    <title>Parts list</title>
 
     <style type="text/css">
         h4 {
@@ -97,8 +97,8 @@
                 </c:if>
 
                 <td>${part.partValue}</td>
-                <td><a href="<c:url value='/edit/${part.id}'/>"><img width="14" height="14" src="\resources\edit.png" alt="Edit"></a></td>
-                <td><a href="<c:url value='/remove/${part.id}'/>"><img width="14" height="14" src="\resources\reci.png" alt="Delete"></a></td>
+                <td><a href="<c:url value='/edit/${part.id}'/>"><img width="14" height="14" src="\images\edit.png" alt="Edit"></a></td>
+                <td><a href="<c:url value='/remove/${part.id}'/>"><img width="14" height="14" src="\images\reci.png" alt="Delete"></a></td>
             </tr>
         </c:forEach>
         <tr>
